@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "description": "A Snap to manage auto-sign sessions for games and apps in the Paima ecosystem.",
+  "proposedName": "Paima Session Snap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaimaStudios/paima-session-snap.git"
+  },
+  "source": {
+    "shasum": "B1ci6wz4ACFZ6FEd2h+ARINyFYUwMGYdf+3574IC1+A=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "snap_getBip32Entropy": [
+      {
+        "path": [
+          "m",
+          "71657769'",
+          "60'"
+        ],
+        "curve": "secp256k1"
+      }
+    ],
+    "snap_dialog": {},
+    "snap_manageState": {},
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": false
+    }
+  },
+  "manifestVersion": "0.1"
+}
